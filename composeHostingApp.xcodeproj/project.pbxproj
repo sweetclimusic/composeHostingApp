@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		573A468E2DCA1DA500BD7177 /* SUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 573A468D2DCA1DA500BD7177 /* SUIComponents */; };
+		573A46912DCA1DD800BD7177 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 573A46902DCA1DD800BD7177 /* ViewInspector */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		573A46702DCA1D0C00BD7177 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573A468E2DCA1DA500BD7177 /* SUIComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573A46912DCA1DD800BD7177 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,7 @@
 			);
 			name = composeHostingApp;
 			packageProductDependencies = (
+				573A468D2DCA1DA500BD7177 /* SUIComponents */,
 			);
 			productName = composeHostingApp;
 			productReference = 573A465F2DCA1D0A00BD7177 /* composeHostingApp.app */;
@@ -135,6 +143,7 @@
 			);
 			name = composeHostingAppTests;
 			packageProductDependencies = (
+				573A46902DCA1DD800BD7177 /* ViewInspector */,
 			);
 			productName = composeHostingAppTests;
 			productReference = 573A466F2DCA1D0C00BD7177 /* composeHostingAppTests.xctest */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = 573A46562DCA1D0900BD7177;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				573A468C2DCA1DA500BD7177 /* XCRemoteSwiftPackageReference "ios-swiftui-components" */,
+				573A468F2DCA1DD800BD7177 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 573A46602DCA1D0A00BD7177 /* Products */;
 			projectDirPath = "";
@@ -552,6 +565,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		573A468C2DCA1DA500BD7177 /* XCRemoteSwiftPackageReference "ios-swiftui-components" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmrc/ios-swiftui-components.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.4;
+			};
+		};
+		573A468F2DCA1DD800BD7177 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		573A468D2DCA1DA500BD7177 /* SUIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 573A468C2DCA1DA500BD7177 /* XCRemoteSwiftPackageReference "ios-swiftui-components" */;
+			productName = SUIComponents;
+		};
+		573A46902DCA1DD800BD7177 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 573A468F2DCA1DD800BD7177 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 573A46572DCA1D0900BD7177 /* Project object */;
 }

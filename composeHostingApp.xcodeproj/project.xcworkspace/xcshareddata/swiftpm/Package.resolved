@@ -1,0 +1,24 @@
+{
+  "originHash" : "d8dd2a7173860380f365c2530b5e7d277e05fe5a5bf7b54e026e3b1c89a52c2e",
+  "pins" : [
+    {
+      "identity" : "ios-swiftui-components",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hmrc/ios-swiftui-components.git",
+      "state" : {
+        "revision" : "d1b8f2e4ce507652c5abf23d724629194972c9fc",
+        "version" : "1.17.4"
+      }
+    },
+    {
+      "identity" : "viewinspector",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nalexn/ViewInspector.git",
+      "state" : {
+        "revision" : "788e7879d38a839c4e348ab0762dcc0364e646a2",
+        "version" : "0.10.1"
+      }
+    }
+  ],
+  "version" : 3
+}
